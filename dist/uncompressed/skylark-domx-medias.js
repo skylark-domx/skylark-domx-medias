@@ -265,15 +265,15 @@ define('skylark-domx-medias/medias',[
             return media.load();
         },
 
-        play : function() {
+        play : function(media) {
           return media.play();
         },
 
-        stop : function() {
+        stop : function(media) {
           return media.stop();
         },
 
-        pause : function() {
+        pause : function(media) {
           this._video.pause();      
         }
 
