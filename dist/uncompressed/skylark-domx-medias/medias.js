@@ -127,14 +127,14 @@ define([
       //events:play,pause,loadedmetadata,timeupdate,volumechange,
      langx.mixin(medias,{
         controls : function(media,v) {
-            if (v !== undefined) {
+            if (v === undefined) {
                 return media.controls;
             } else {
                 media.controls = v;
             }
         },
         currentTime : function(media,t) {
-            if (t !== undefined) {
+            if (t === undefined) {
                 return media.currentTime;
             } else {
                 media.currentTime = t;
@@ -162,7 +162,7 @@ define([
         },
 
         volume : function(media,v) {
-            if (v !== undefined) {
+            if (v === undefined) {
                 return media.volume;
             } else {
                 media.volume = v;
