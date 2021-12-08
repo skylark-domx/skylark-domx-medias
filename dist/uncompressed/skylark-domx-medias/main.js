@@ -6,28 +6,18 @@ define([
 
    // from ./medias
     velm.delegate([
+        "controls",
+        "currentTime",
+        "duration",
+        "ended",
         "muted",
         "paused",
         "played",
+        "volumn",
         "load",
         "play", 
         "stop",
         "pause",
-        "height",
-        "marginExtents",
-        "marginRect",
-        "marginSize",
-        "offsetParent",
-        "paddingExtents",
-        "pagePosition",
-        "pageRect",
-        "relativePosition",
-        "relativeRect",
-        "scrollIntoView",
-        "scrollLeft",
-        "scrollTop",
-        "pageSize",
-        "width"
     ], medias,{
     });
 

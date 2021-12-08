@@ -214,6 +214,13 @@ define('skylark-domx-medias/medias',[
       }
       //events:play,pause,loadedmetadata,timeupdate,volumechange,
      langx.mixin(medias,{
+        controls : function(media,v) {
+            if (v !== undefined) {
+                return media.controls;
+            } else {
+                media.controls = v;
+            }
+        },
         currentTime : function(media,t) {
             if (t !== undefined) {
                 return media.currentTime;
@@ -286,28 +293,18 @@ define('skylark-domx-medias/main',[
 
    // from ./medias
     velm.delegate([
+        "controls",
+        "currentTime",
+        "duration",
+        "ended",
         "muted",
         "paused",
         "played",
+        "volumn",
         "load",
         "play", 
         "stop",
         "pause",
-        "height",
-        "marginExtents",
-        "marginRect",
-        "marginSize",
-        "offsetParent",
-        "paddingExtents",
-        "pagePosition",
-        "pageRect",
-        "relativePosition",
-        "relativeRect",
-        "scrollIntoView",
-        "scrollLeft",
-        "scrollTop",
-        "pageSize",
-        "width"
     ], medias,{
     });
 

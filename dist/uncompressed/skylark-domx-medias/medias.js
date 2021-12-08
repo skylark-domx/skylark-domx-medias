@@ -126,6 +126,13 @@ define([
       }
       //events:play,pause,loadedmetadata,timeupdate,volumechange,
      langx.mixin(medias,{
+        controls : function(media,v) {
+            if (v !== undefined) {
+                return media.controls;
+            } else {
+                media.controls = v;
+            }
+        },
         currentTime : function(media,t) {
             if (t !== undefined) {
                 return media.currentTime;
