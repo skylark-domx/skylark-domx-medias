@@ -300,7 +300,7 @@ define('skylark-domx-medias/main',[
         "muted",
         "paused",
         "played",
-        "volumn",
+        "volume",
         "load",
         "play", 
         "stop",

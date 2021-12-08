@@ -5,5 +5,5 @@
  * @link www.skylarkjs.org
  * @license MIT
  */
-define(["skylark-domx-velm","skylark-domx-query","./medias"],function(e,d,a){return e.delegate(["controls","currentTime","duration","ended","muted","paused","played","volumn","load","play","stop","pause"],a,{}),a});
+define(["skylark-domx-velm","skylark-domx-query","./medias"],function(e,d,a){return e.delegate(["controls","currentTime","duration","ended","muted","paused","played","volume","load","play","stop","pause"],a,{}),a});
 //# sourceMappingURL=sourcemaps/main.js.map

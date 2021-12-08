@@ -13,7 +13,7 @@ define([
         "muted",
         "paused",
         "played",
-        "volumn",
+        "volume",
         "load",
         "play", 
         "stop",
