@@ -149,8 +149,12 @@ define([
             return media.ended;
         },
 
-        muted : function(media) {
-            return media.muted;
+        muted : function(media,v) {
+            if (v === undefined) {
+                return media.muted;
+            } else {
+                media.muted = v;
+            }
         },
 
         paused : function(media) {
@@ -186,7 +190,7 @@ define([
         },
 
         pause : function(media) {
-          this._video.pause();      
+          media.pause();      
         }
 
 
